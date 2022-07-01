@@ -7,4 +7,6 @@ const VisualPartnersService = require("./lib/services/VisualPartnersService");
 const allInfoVisualPartners = VisualPartnersService.getAllStudentsInfo(visualpartners)
 console.log(allInfoVisualPartners)
 
-
+//Get Student emails if they HAVE CERTIFICATION
+const studentEmails = VisualPartnersService.getStudentEmails(visualpartners)
+console.log(studentEmails)
