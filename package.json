@@ -1,0 +1,23 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "description": "code-challenge",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoCantarell/code-challenge.git"
+  },
+  "author": "diegocantarell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoCantarell/code-challenge/issues"
+  },
+  "homepage": "https://github.com/DiegoCantarell/code-challenge#readme"
+}
