@@ -10,3 +10,7 @@ console.log(allInfoVisualPartners)
 //Get Student emails if they HAVE CERTIFICATION
 const studentEmails = VisualPartnersService.getStudentEmails(visualpartners)
 console.log(studentEmails)
+
+//Get Students info if they have CREDITS > 500
+const studentCredits = VisualPartnersService.studentCredits(visualpartners)
+console.log(studentCredits )
