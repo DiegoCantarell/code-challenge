@@ -4,11 +4,10 @@
   "description": "code-challenge",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./node_modules/.bin/jest",
     "server": "node ./lib/server/server.js"
   },
   "repository": {
