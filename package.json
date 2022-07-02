@@ -23,5 +23,8 @@
   "homepage": "https://github.com/DiegoCantarell/code-challenge#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
   }
 }
