@@ -10,4 +10,9 @@ describe("Test for VisualPartnersController",() => {
         //The amount of students with certification is 29
         expect(VisualPartnersController.getEmails().length).toBe(29)
     })
+    test("#3 Test for getStudentCredits()", ()  => {
+        expect(VisualPartnersController.getStudentsCredits()).not.toBeUndefined()
+        //The amount of students with credits greater than 500 is 27
+        expect(VisualPartnersController.getStudentsCredits().length).toBe(27)
+    })
 })
