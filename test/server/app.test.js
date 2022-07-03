@@ -25,4 +25,12 @@ describe("User Endpoints Tests",() => {
                 expect(response.text.length).toBe(918);
             });
     });
+     test("GET / -> #4 Test for get the students with credits aproved =500", () => {
+        return request(app)
+            .get("/students/credits/approved")
+            .then(response => {
+                expect(response.statusCode).toBe(200);
+                expect(response.text.length).toBe(5676);
+            });
+    });
 })
