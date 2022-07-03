@@ -9,14 +9,20 @@ describe("User Endpoints Tests",() => {
         //done();
         })
     })
-     test("GET / -> #2 Test for get the explorers names", () => {
+     test("GET / -> #2 Test for get students information", () => {
         return request(app)
             .get("/students/information")
             .then(response => {
                 expect(response.statusCode).toBe(200);
-
                 expect(response.text.length).toBe(10714);
-                // done();
+            });
+    });
+     test("GET / -> #3 Test for get the students emails", () => {
+        return request(app)
+            .get("/students/email/haveCertification=true")
+            .then(response => {
+                expect(response.statusCode).toBe(200);
+                expect(response.text.length).toBe(918);
             });
     });
 })
