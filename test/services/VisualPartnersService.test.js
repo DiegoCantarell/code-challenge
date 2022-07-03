@@ -35,15 +35,16 @@ describe('Test for Services -> VisualPartnersService class', () => {
       "Visual Thinking Avanzado"
     ],
     "previousCourses": 10,
-    "haveCertification": true
+    "haveCertification": false
   }
 ]
 
     test('#1 Test for getAllStudentsInfo ', () => {
-
-
+        expect(VisualPartnersService.getAllStudentsInfo(visualpartners)).not.toBeUndefined()
+        expect(VisualPartnersService.getAllStudentsInfo(visualpartners).length).toBe(3)
+    })
+    test('#2 Test for getStudentsEmail ', () => {
         expect(VisualPartnersService.getStudentsEmail(visualpartners)).not.toBeUndefined()
-        expect(VisualPartnersService.getStudentsEmail(visualpartners).length).toBe(3)
-
+        expect(VisualPartnersService.getStudentsEmail(visualpartners).length).toBe(2)
     })
 })
