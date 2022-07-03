@@ -47,4 +47,8 @@ describe('Test for Services -> VisualPartnersService class', () => {
         expect(VisualPartnersService.getStudentsEmail(visualpartners)).not.toBeUndefined()
         expect(VisualPartnersService.getStudentsEmail(visualpartners).length).toBe(2)
     })
+    test('#3 Test for studentCredits ', () => {
+        expect(VisualPartnersService.studentCredits(visualpartners)).not.toBeUndefined()
+        expect(VisualPartnersService.studentCredits(visualpartners).length).toBe(2)
+    })
 })
