@@ -9,4 +9,14 @@ describe("User Endpoints Tests",() => {
         //done();
         })
     })
+     test("GET / -> #2 Test for get the explorers names", () => {
+        return request(app)
+            .get("/students/information")
+            .then(response => {
+                expect(response.statusCode).toBe(200);
+
+                expect(response.text.length).toBe(10714);
+                // done();
+            });
+    });
 })
