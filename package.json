@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "node ./node_modules/.bin/jest",
-    "server": "node ./lib/server/server.js"
+    "server": "node ./lib/server/server.js",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
